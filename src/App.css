@@ -1,0 +1,89 @@
+/* src/App.css */
+.cards-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+  gap: 20px; /* Промежуток между карточками */
+}
+
+.shop-card {
+  position: relative; /* Устанавливаем относительное позиционирование для родителя */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Чтобы обрезать содержимое, выходящее за пределы границ */
+  margin: 0;
+  padding: 0; /* Убираем внутренние отступы */
+  height: 300px; /* Фиксированная высота */
+  width: 300px; /* Фиксированная ширина */
+}
+
+.shop-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Изменяет размер изображения для заполнения блока, сохраняя соотношение сторон */
+}
+
+.shop-card-h3-p {
+  position: absolute; /* Абсолютное позиционирование над изображением */
+  top: 0; /* Прижимаем к верхней части */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.shop-card-basement {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.shop-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  }
+
+.shop-item img{
+  width: 300px;
+  height: 300px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #FF4500;
+  color: #FF4500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price-span {
+  color: #FF4500;
+  text-transform: uppercase;
+}
+.shop-card-item-name {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.material-icons {
+  cursor: pointer;
+  font-size: 36px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
